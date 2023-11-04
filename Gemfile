@@ -54,6 +54,7 @@ gem "simple_form", github: "heartcombo/simple_form"
 gem 'slim-rails'
 gem 'will_paginate'
 gem 'will_paginate-bootstrap'
+gem 'turbo-rails'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem

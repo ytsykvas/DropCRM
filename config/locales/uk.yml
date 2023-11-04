@@ -96,3 +96,6 @@ uk:
       not_saved:
         one: "1 помилка заборонила збереження цього %{resource}:"
         other: "%{count} помилки заборонили збереження цього %{resource}:"
+  header:
+    log_out: "Вийти"
+    approve: "Ви впевнені?"
