@@ -21,3 +21,10 @@
         - else
           li.nav-item
             = link_to "Login", new_user_session_path, class: "nav-link"
+ul.navbar-nav.ms-auto.me-3
+  li.nav-item.dropdown.ms-auto
+    a.nav-link.dropdown-toggle href="#" id="navbarDropdownLanguage" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+      = t('navbar.language')
+    .dropdown-menu.dropdown-menu-end aria-labelledby="navbarDropdownLanguage"
+      = link_to "English", change_locale_to_en_path, method: :post, class: "dropdown-item"
+      = link_to "Українська", change_locale_to_uk_path, method: :post, class: "dropdown-item"
