@@ -9,6 +9,18 @@ h2= t('devise.registrations.new.title')
             required: true,
             autofocus: true,
             input_html: { autocomplete: 'email', placeholder: "example@gmail.com", "data-test-id": "email-input" }
+    = f.input :company_name,
+            label: t('devise.registrations.new.company_name'),
+            required: true,
+            autofocus: true,
+            input_html: { placeholder: "Samsung / Apple / McDonald`s", "data-test-id": "company-name-input" }
+    = f.input :user_type,
+            label: t('devise.registrations.new.user_type'),
+            collection: [[t('devise.registrations.new.user_types.wholesale'), 'supplier'],
+                    [t('devise.registrations.new.user_types.seller'), 'buyer']],
+            include_blank: true,
+            required: true,
+            input_html: { "data-test-id": "user-type-input" }
     = f.input :password,
             label: t('devise.registrations.new.password'),
             required: true,
@@ -20,10 +32,8 @@ h2= t('devise.registrations.new.title')
             label: t('devise.registrations.new.password_confirmation'),
             required: true,
             input_html: { autocomplete: 'new-password', "data-test-id": "password_confirmation-input"}
-
   .form-actions
     = f.button :submit, t('devise.registrations.new.submit_button'),
             class: 'btn btn-primary',
             input_html: { "data-test-id": "submit_button", "data-disable-with": t('devise.registrations.new.submit_button') }
-
 = render 'devise/shared/links'

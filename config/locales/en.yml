@@ -55,11 +55,16 @@ en:
       new:
         title: "New user:"
         email: "Email"
+        company_name: "Company name"
+        user_type: "Supplier or seller"
         password: "Password"
         six_or_more: "It should be 6 or more symbols"
         password_hint: "Bigger is better :)"
         password_confirmation: "Password confirmation"
         submit_button: "Create account"
+        user_types:
+          wholesale: "I provide goods for sale"
+          seller: "I am selling goods from someone else's warehouse"
       destroyed: "Bye! Your account has been successfully cancelled. We hope to see you again soon."
       signed_up: "Welcome! You have signed up successfully."
       signed_up_but_inactive: "You have signed up successfully. However, we could not sign you in because your account is not yet activated."

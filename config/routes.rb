@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  devise_for :users
+  devise_for :users, controllers: {
+    registrations: 'users/registrations'
+  }
   root to: "pages#home"
 
   get '/change_locale_to_en', to: 'application#change_locale_to_en', as: :change_locale_to_en
