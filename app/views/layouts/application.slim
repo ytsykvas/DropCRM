@@ -10,6 +10,10 @@ html
     = javascript_importmap_tags
   body
     = render "shared/navbar"
+    - if current_user.present? && current_user.user_type == 'buyer'
+      = render "shared/buyer_toolbar"
+    - elsif current_user.present? && current_user.user_type == 'supplier'
+      =render "shared/supplier_toolbar"
     .container.my-5
       = render "shared/flashes"
       = yield

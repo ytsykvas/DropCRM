@@ -1,0 +1,33 @@
+.navbar.navbar-expand-sm.navbar-light.toolbar-drop
+  .container-fluid
+    = link_to "#", class: "navbar-brand" do
+      h5 = current_user.company_name
+    button.navbar-toggler[type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"]
+      span.navbar-toggler-icon
+    #navbarSupportedContent.collapse.navbar-collapse
+      ul.navbar-nav.me-auto
+        li.nav-item
+          = link_to "My Staff", "#", class: "nav-link"
+        li.nav-item
+          = link_to "Orders", "#", class: "nav-link"
+        li.nav-item
+          = link_to "Messages", "#", class: "nav-link"
+        li.nav-item
+          = link_to "Buyers", "#", class: "nav-link"
+        li.nav-item
+          = link_to "Statistic", "#", class: "nav-link"
+        li.nav-item
+          = link_to "Payout", "#", class: "nav-link"
+        li.nav-item
+          = link_to "Advertisement", "#", class: "nav-link"
+        li.nav-item
+          = link_to "Help", "#", class: "nav-link"
+        li.nav-item
+          = link_to "Settings", "#", class: "nav-link"
+ul.navbar-nav.ms-auto.me-3
+  li.nav-item.dropdown.ms-auto
+    a.nav-link.dropdown-toggle href="#" id="navbarDropdownLanguage" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+      = t('navbar.language')
+    .dropdown-menu.dropdown-menu-end aria-labelledby="navbarDropdownLanguage"
+      = link_to "English", change_locale_to_en_path, method: :post, class: "dropdown-item"
+      = link_to "Українська", change_locale_to_uk_path, method: :post, class: "dropdown-item"

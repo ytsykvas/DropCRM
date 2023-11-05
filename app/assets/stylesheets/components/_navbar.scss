@@ -1,12 +1,22 @@
-.navbar-lewagon {
+.navbar-drop {
   justify-content: space-between;
-  background: white;
+  background: #5083b7;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  color: white;
 }
 
-.navbar-lewagon .navbar-collapse {
+.toolbar-drop {
+  justify-content: space-between;
+  background: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  color: black;
+}
+
+
+.navbar-drop .navbar-collapse {
   flex-grow: 0;
 }
 
-.navbar-lewagon .navbar-brand img {
+.navbar-drop .navbar-brand img {
   width: 40px;
 }

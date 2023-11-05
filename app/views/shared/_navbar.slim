@@ -1,14 +1,18 @@
-.navbar.navbar-expand-sm.navbar-light.navbar-lewagon
+.navbar.navbar-expand-sm.navbar-light.navbar-drop
   .container-fluid
     = link_to "#", class: "navbar-brand" do
-      = image_tag "https://w7.pngwing.com/pngs/386/646/png-transparent-logo-drawing-art-youtube-sew-text-trademark-logo.png"
+      = image_tag "https://dropconnect.com/wp-content/uploads/2023/01/drop_logo-PNG.png"
     button.navbar-toggler[type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"]
       span.navbar-toggler-icon
     #navbarSupportedContent.collapse.navbar-collapse
       ul.navbar-nav.me-auto
+        li.nav-item
+          = link_to "Home", "#", class: "nav-link"
+        li.nav-item
+          = link_to "Prices", "#", class: "nav-link"
+        li.nav-item
+          = link_to "Contacts", "#", class: "nav-link"
         - if user_signed_in?
-          li.nav-item
-            = link_to "Home", "#", class: "nav-link"
           li.nav-item
             form(action="/users/sign_out" method="post")
               input(type="hidden" name="_method" value="delete")
@@ -18,10 +22,3 @@
         - else
           li.nav-item
             = link_to "Login", new_user_session_path, class: "nav-link btn btn-success"
-ul.navbar-nav.ms-auto.me-3
-  li.nav-item.dropdown.ms-auto
-    a.nav-link.dropdown-toggle href="#" id="navbarDropdownLanguage" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-      = t('navbar.language')
-    .dropdown-menu.dropdown-menu-end aria-labelledby="navbarDropdownLanguage"
-      = link_to "English", change_locale_to_en_path, method: :post, class: "dropdown-item"
-      = link_to "Українська", change_locale_to_uk_path, method: :post, class: "dropdown-item"
