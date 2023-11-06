@@ -1,17 +1,16 @@
 .navbar.navbar-expand-sm.navbar-light.toolbar-drop
   .container-fluid
     = link_to "#", class: "navbar-brand" do
-      h5 = current_user.company_name
     button.navbar-toggler[type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"]
       span.navbar-toggler-icon
     #navbarSupportedContent.collapse.navbar-collapse
       ul.navbar-nav.me-auto
         li.nav-item
+          = link_to "Messages", "#", class: "nav-link"
+        li.nav-item
           = link_to "My Staff", "#", class: "nav-link"
         li.nav-item
           = link_to "Orders", "#", class: "nav-link"
-        li.nav-item
-          = link_to "Messages", "#", class: "nav-link"
         li.nav-item
           = link_to "Buyers", "#", class: "nav-link"
         li.nav-item
