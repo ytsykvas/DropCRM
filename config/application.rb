@@ -14,6 +14,7 @@ module SMM
       generate.helper false
       generate.test_framework :test_unit, fixture: false
     end
+    config.load_defaults 7.0
 
     I18n.load_path += Dir[Rails.root.join("config", "locales", "**", "*.yml")]
     I18n.available_locales = %i[en uk]
