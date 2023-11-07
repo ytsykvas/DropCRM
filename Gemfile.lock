@@ -465,7 +465,7 @@ DEPENDENCIES
   tzinfo-data
   undercover
   web-console
-  webdrivers (>= 4.8.0)
+  webdrivers (~> 5.0)
   webmock
   will_paginate
   will_paginate-bootstrap

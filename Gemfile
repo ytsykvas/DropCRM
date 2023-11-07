@@ -61,7 +61,7 @@ group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
   gem "dotenv-rails"
   gem 'rubocop', require: false
-  gem 'webdrivers', '>= 4.8.0'
+  gem 'webdrivers', '~> 5.0', require: false
   gem 'prawn' # for pdf export
   gem 'spreadsheet' # for EXEL file export
 end
