@@ -4,12 +4,8 @@ When(/I visit (.*?) page/) do |page|
            new_user_registration_path
          when 'log in'
            new_user_session_path
-         when 'positions'
-           positions_path
-         when 'new position'
-           new_position_path
-         when 'edit position'
-           edit_position_path
+         when 'main'
+           root_path
          end
   visit path
 end
@@ -21,11 +17,7 @@ When(/I fill "(.*?)" in the (.*?) (field|select box)/) do |text, field_test_id, 
     password: 'password-input',
     'password confirmation': 'password_confirmation-input',
     'user type': 'user-type-input',
-    'company name': 'company-name-input',
-    # Position
-    'position title': 'title_field',
-    'position body': 'body_field',
-    'position experience': 'experience_field'
+    'company name': 'company-name-input'
   }.stringify_keys
 
   input_element = find("[data-test-id='#{hash_of_data_test_id[field_test_id.downcase]}']")
@@ -44,13 +36,7 @@ When (/I click on the (.*?) (link|button)/) do |test_id, type|
     'submit': 'submit_button',
     # dashboard
     'avatar': 'avatar_picture',
-    'sign out': 'log_out_button',
-    # position
-    'create position': 'create_position_btn',
-    'edit position': 'edit_position_btn',
-    # candidate
-    'show candidates': 'show_candidates_btn',
-    'show position': 'show_position_btn'
+    'sign out': 'log_out_button'
   }.stringify_keys
   object = case type
            when "link"

@@ -11,9 +11,26 @@ Then (/(After waiting max (\d*) seconds )?I (should see|should not see) the text
     'success registration alert': 'devise.registrations.signed_up',
     'signed in alert': 'devise.sessions.signed_in',
     'forgot password': 'devise.shared_links.forgot_password',
-    'Signed out': 'devise.sessions.already_signed_out'
+    'Signed out': 'devise.sessions.already_signed_out',
     # navbar
+    'main page': 'header.home',
+    'prices page': 'header.prices',
+    'contacts page': 'header.contacts',
+    'log in': 'header.log_in',
+    'log out': 'header.log_out',
     # toolbar
+    'messages': 'toolbar.messages',
+    'staff': 'toolbar.my_staff',
+    'cart': 'toolbar.cart',
+    'orders': 'toolbar.orders',
+    'buyers': 'toolbar.buyers',
+    'suppliers': 'toolbar.suppliers',
+    'statistic': 'toolbar.statistic',
+    'payouts': 'toolbar.payout',
+    'wallet': 'toolbar.wallet',
+    'advertisement': 'toolbar.advertisement',
+    'help': 'toolbar.help',
+    'settings': 'toolbar.settings'
   }.stringify_keys
   text = I18n.t(hash_of_i18n_keys.fetch(key))
   wait ||= Capybara.default_max_wait_time
