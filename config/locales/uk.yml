@@ -53,7 +53,7 @@ uk:
       updated_not_active: "Ваш пароль успішно змінено."
     registrations:
       new:
-        title: "Реєстрація користувача:"
+        title: "Реєстрація користувача"
         email: "Пошта"
         company_name: "Назва компанії"
         user_type: "Постачальник або продавець"
@@ -104,3 +104,20 @@ uk:
   header:
     log_out: "Вийти"
     approve: "Ви впевнені?"
+    home: "Головна"
+    prices: "Ціни"
+    contacts: "Контакти"
+    log_in: "Війти"
+  toolbar:
+    messages: "Повідомлення"
+    cart: "Корзина"
+    my_staff: "Склад"
+    orders: "Замовлення"
+    suppliers: "Постачальники"
+    buyers: "Покупці"
+    statistic: "Статистика"
+    wallet: "Гаманець"
+    payout: "Виплати"
+    advertisement: "Реклама"
+    help: "Допомога"
+    settings: "Налаштування"

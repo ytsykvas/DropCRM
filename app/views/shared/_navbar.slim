@@ -8,11 +8,11 @@
     #navbarSupportedContent.collapse.navbar-collapse
       ul.navbar-nav.me-auto
         li.nav-item
-          = link_to "Home", "#", class: "nav-link"
+          = link_to t('header.home'), "#", class: "nav-link"
         li.nav-item
-          = link_to "Prices", "#", class: "nav-link"
+          = link_to t('header.prices'), "#", class: "nav-link"
         li.nav-item
-          = link_to "Contacts", "#", class: "nav-link"
+          = link_to t('header.contacts'), "#", class: "nav-link"
         - if user_signed_in?
           li.nav-item
             form(action="/users/sign_out" method="post")
@@ -22,4 +22,4 @@
                 = t('header.log_out')
         - else
           li.nav-item
-            = link_to "Login", new_user_session_path, class: "nav-link btn btn-success"
+            = link_to t('header.log_in'), new_user_session_path, class: "nav-link btn btn-success"

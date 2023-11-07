@@ -104,4 +104,21 @@ en:
   header:
     log_out: "Log out"
     approve: "Are you sure?"
+    home: "Home"
+    prices: "Prices"
+    contacts: "Contacts"
+    log_in:  "Login"
+  toolbar:
+    messages: "Messages"
+    cart: "Cart"
+    my_staff: "My Staff"
+    orders: "Orders"
+    suppliers: "Suppliers"
+    buyers: "Buyers"
+    statistic: "Statistic"
+    wallet: "Wallet"
+    payout: "Payouts"
+    advertisement: "Advertisement"
+    help: "Help"
+    settings: "Settings"
 

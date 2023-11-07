@@ -5,21 +5,23 @@
     #navbarSupportedContent.collapse.navbar-collapse
       ul.navbar-nav.me-auto
         li.nav-item
-          = link_to "Cart", "#", class: "nav-link"
+          = link_to t('toolbar.messages'), "#", class: "nav-link"
         li.nav-item
-          = link_to "Suppliers", "#", class: "nav-link"
+          = link_to t('toolbar.cart'), "#", class: "nav-link"
         li.nav-item
-          = link_to "Orders", "#", class: "nav-link"
+          = link_to t('toolbar.orders'), "#", class: "nav-link"
         li.nav-item
-          = link_to "Statistic", "#", class: "nav-link"
+          = link_to t('toolbar.suppliers'), "#", class: "nav-link"
         li.nav-item
-          = link_to "My Wallet", "#", class: "nav-link"
+          = link_to t('toolbar.statistic'), "#", class: "nav-link"
         li.nav-item
-          = link_to "Payout", "#", class: "nav-link"
+          = link_to t('toolbar.wallet'), "#", class: "nav-link"
         li.nav-item
-          = link_to "Help", "#", class: "nav-link"
+          = link_to t('toolbar.payout'), "#", class: "nav-link"
         li.nav-item
-          = link_to "Settings", "#", class: "nav-link"
+          = link_to t('toolbar.help'), "#", class: "nav-link"
+        li.nav-item
+          = link_to t('toolbar.settings'), "#", class: "nav-link"
 ul.navbar-nav.ms-auto.me-3
   li.nav-item.dropdown.ms-auto
     a.nav-link.dropdown-toggle href="#" id="navbarDropdownLanguage" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
